@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Emurgency</string>
+    
+    <!-- button texts --><eat-comment />
+    <string name="buttonLoginText">Login</string>
+    <string name="buttonRegisterText">Register</string>
+    <string name="buttonCallText">112</string>
+    <string name="buttonAcceptText">Accept</string>
+    <string name="unlockText">Unlock to Accept</string>
+    <string name="registerButtonText">Register</string>
+    <string name="dashboardLogoutButtonText">Logout</string>
+    <string name="dashboardHideButtonText">Hide</string>
+    
+    <!-- textview texts -->
+    <string name="userVerifiedText">User verified</string>
+    <string name="userUnverifiedText">User unverified</string>
+    
+    <!-- form hints --><eat-comment />
+    <string name="loginEmailHint">Email</string>
+    <string name="loginPasswordHint">Password</string>
+    <string name="regFirstNameHint">First Name</string>
+    <string name="regLastNameHint">Last Name</string>
+    <string name="regEmailHint">Email Adress</string>
+    <string name="regPassHint">Password</string>
+    <string name="regPassValidHint">Repeat Password</string>
+    
+    <!-- API keys -->
+    <string name="mapsApiKeyDebug">0R4jGI1QSFRNazpM0Ne2riQeQLr_3X9HJxf1NyA</string>
+    <string name="mapsApiKeyProd"></string>
+
+</resources>

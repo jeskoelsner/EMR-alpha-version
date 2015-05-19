@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:fitsSystemWindows="true"
+    android:paddingTop="20dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    style="@style/loginScreen">
+    
+    <ImageView 
+        android:layout_alignParentTop="true"
+        android:id="@+id/loginLogo"
+        android:src="@drawable/login_logo"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="15dp" />
+    
+    <ImageView 
+        android:id="@+id/dotSeparator"
+        android:layout_below="@id/loginLogo" 
+        android:src="@drawable/dotline"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp" />
+
+	<EditText android:id="@+id/regFirstName"
+	    android:layout_below="@id/dotSeparator" 
+	    android:hint="@string/regFirstNameHint"
+		style="@style/inputText"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="24dp" />
+	
+	<EditText android:id="@+id/regLastName"
+	    android:layout_below="@id/regFirstName" 
+	    android:hint="@string/regLastNameHint"
+		style="@style/inputText"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="24dp" />
+	
+	<EditText android:id="@+id/regEmail"
+	    android:layout_below="@id/regLastName" 
+	    android:hint="@string/regEmailHint"
+		style="@style/inputText"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:inputType="textEmailAddress"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="24dp" />
+	
+	<EditText android:id="@+id/regPass"
+	    android:layout_below="@id/regEmail" 
+	    android:hint="@string/regPassHint"
+		style="@style/inputText"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:inputType="textPassword"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="24dp" />
+	
+	<EditText android:id="@+id/regPassValid"
+	    android:layout_below="@id/regPass" 
+	    android:hint="@string/regPassValidHint"
+		style="@style/inputText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPassword"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="24dp" />
+	
+	<Button android:id="@+id/buttonRegisterSubmit" 
+	    android:layout_below="@id/regPassValid"
+	    android:layout_alignParentLeft="true" 
+	    android:text="@string/registerButtonText" 
+	    style="@style/buttonFull" 
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="24dp" />
+
+</RelativeLayout>

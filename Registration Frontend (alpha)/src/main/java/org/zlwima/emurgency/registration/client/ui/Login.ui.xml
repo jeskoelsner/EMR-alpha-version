@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder 
+	xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:p1="urn:import:com.google.gwt.user.datepicker.client" 
+	xmlns:p2="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:w="urn:import:org.zlwima.emurgency.registration.client.widgets">
+
+	<ui:with field='res' type='org.zlwima.emurgency.registration.client.resources.Resources'/>
+
+	<g:SimplePanel width="100%" height="100%">
+		<g:AbsolutePanel ui:field="panel" width="400px" height="400px">
+			<g:at left="0" top="0">
+				<w:LabeledTextBox ui:field="emailBox" text="Email:" labelStyle='{res.style.bold}' labelWidth="80" textBoxWidth="200" />
+			</g:at>
+			<g:at left="0" top="40">
+				<w:LabeledTextBox ui:field="passwordBox" text="Password:" labelStyle='{res.style.bold}' labelWidth="80" textBoxWidth="200" />
+			</g:at>
+			<g:at left="0" top="90">
+				<w:ImageButton ui:field="loginButton" text="Login" width="150px" resource="{res.images.user}" />
+			</g:at>
+			<g:at left="0" top="150">
+				<w:ImageButton ui:field="registerButton" text="Register" width="150px" resource="{res.images.user_add}" />
+			</g:at>
+		</g:AbsolutePanel>
+	</g:SimplePanel>
+
+</ui:UiBinder>

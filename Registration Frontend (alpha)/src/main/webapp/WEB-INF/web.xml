@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+		 xmlns="http://java.sun.com/xml/ns/javaee" 
+		 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <servlet>
+        <servlet-name>greetServlet</servlet-name>
+        <servlet-class>org.zlwima.emurgency.registration.server.RpcServiceImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>greetServlet</servlet-name>
+        <url-pattern>/Volunteermodule/greet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>Volunteermodule.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+   <item android:state_pressed="true">
+        <layer-list>
+            <item android:top="2dp" android:right="2dp" android:bottom="2dp" android:left="2dp">
+				<bitmap android:dither="true" android:src="@drawable/bg_callbutton"/>                
+            </item>
+        	<item>
+        	    <shape android:shape="rectangle">
+					<stroke
+					    android:width="2dp"
+		            	android:color="#FF8A0010" />
+		            <corners
+		                android:radius="0dp" />
+		            <padding
+		                android:left="16dp"
+		                android:top="16dp"
+		                android:right="16dp"
+		                android:bottom="16dp" />
+		            <solid android:color="#22000000"/>
+		        </shape>
+        	</item>
+        </layer-list>
+    </item>
+    
+    <item>
+        <layer-list>
+            <item android:top="2dp" android:right="2dp" android:bottom="2dp" android:left="2dp" >
+				<bitmap  android:dither="true" android:src="@drawable/bg_callbutton" />                
+            </item>
+        	<item>
+        	    <shape android:shape="rectangle">
+					<stroke
+					    android:width="2dp"
+		            	android:color="#FF8A0010" />
+		            <corners
+		                android:radius="0dp" />
+		            <padding
+		                android:left="16dp"
+		                android:top="16dp"
+		                android:right="16dp"
+		                android:bottom="16dp" />
+		            <solid android:color="@android:color/transparent"/>
+		        </shape>
+        	</item>
+        </layer-list>
+    </item>
+
+</selector>

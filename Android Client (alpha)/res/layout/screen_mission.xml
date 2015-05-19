@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    android:background="#ffffffff">
+	
+	<com.google.android.maps.MapView
+	    android:id="@+id/mapView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:apiKey="@string/mapsApiKeyDebug"
+	    android:clickable="false"
+	/>
+	
+	<RelativeLayout android:id="@+id/topMenuPanel"
+	    android:layout_alignParentTop="true"
+	    android:layout_height="wrap_content" 
+	    android:layout_width="fill_parent"
+	    android:paddingTop="5dp"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:paddingBottom="5dp"
+	    android:background="#99000000"
+	    android:visibility="invisible">
+	    	<TextView android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:layout_alignParentLeft="true"
+	   	        android:layout_marginLeft="5dp"
+	   	        android:gravity="center"
+	   	        android:textSize="15dp"
+	   	        android:textColor="#ffffffff"
+	   	        android:id="@+id/caseDistanceText"
+	   	        android:text=""/>
+	    	<TextView android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:layout_alignParentRight="true"
+	   	        android:layout_toRightOf="@id/caseDistanceText"
+	   	        android:layout_marginRight="5dp"
+	   	        android:gravity="center"
+	   	        android:textSize="15dp"
+	   	        android:textColor="#ffffffff"
+	   	        android:id="@+id/caseAddressText"
+	   	        android:text=""/>
+	</RelativeLayout>
+	
+	<RelativeLayout android:id="@+id/menuPanel"
+	    android:layout_alignParentBottom="true"
+	    android:layout_height="65dp" 
+	    android:layout_width="fill_parent"
+	    android:paddingTop="5dp"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:paddingBottom="5dp"
+	    android:background="#99000000"
+	    android:visibility="invisible">
+	    
+	    <LinearLayout android:id="@+id/iconFrame" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+		    android:paddingTop="5dp"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:paddingBottom="5dp">
+	        <ImageView 
+		    android:src="@drawable/icon"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+	    </LinearLayout>
+	    
+		<Button 
+		    android:id="@+id/centerButton"
+		    android:src="@drawable/icon"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    
+		    style="@style/buttonHalf"
+		    android:text="Zoom Fit" 
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentBottom="true"/>
+		
+		<TextView android:id="@+id/volunteerCount2"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:textSize="15dp"
+	        android:textColor="#aaffffff"
+	        android:layout_marginTop="5dp"
+	        android:gravity="center"
+	        android:text=" volunteers"
+	        android:layout_toRightOf="@id/centerButton"
+	        android:layout_toLeftOf="@id/iconFrame"/>
+		<Chronometer 
+	        android:id="@+id/missionTimer2" 
+	        android:layout_below="@id/volunteerCount2"
+	        android:textSize="15dp"
+	        android:textColor="#ffffffff"
+	        android:layout_toRightOf="@id/centerButton"
+	        android:layout_toLeftOf="@id/iconFrame"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"/>
+	</RelativeLayout>
+	
+	
+	<RelativeLayout 
+	    android:id="@+id/glasPanel"
+	    android:layout_alignParentTop="true"
+	    android:layout_height="fill_parent" 
+	    android:layout_width="fill_parent"
+	    android:background="#aa000000">
+	    
+	    <ImageView 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:id="@+id/missionLogo"
+	        android:src="@drawable/login_logo"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" />
+	    
+	    <Chronometer 
+	        android:id="@+id/missionTimer" 
+	        android:layout_below="@id/missionLogo"
+	        
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"/>
+	    
+	   	<RelativeLayout 
+	   	    android:id="@+id/unlockField"
+	   	    android:layout_height="65dp" 
+			android:paddingTop="5dp"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingBottom="5dp"
+	    	android:layout_width="fill_parent"
+	    	android:background="#aa000000"
+	    	android:layout_alignParentBottom="true" >
+	    	
+	   	    <TextView android:layout_width="fill_parent"
+	   	        android:layout_height="wrap_content"
+	   	        android:gravity="center"
+	   	        android:textSize="17dp"
+	   	        android:layout_marginTop="15dp"
+	   	        android:textColor="#ffffffff"
+	   	        android:text="@string/unlockText"/>
+	   	    
+	    	<Button 
+	    	    android:id="@+id/buttonUnlock" 
+	    	    android:text=""
+				style="@style/buttonCall" 
+				android:layout_width="70dp"
+				android:layout_height="60dp"
+			 />
+
+	    </RelativeLayout>
+	    
+   		<TextView android:id="@+id/volunteerCount"
+   		    android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#11000000"
+	        android:text=""
+	        android:gravity="center"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:textColor="#ffffffff"
+	        android:textSize="14dp"
+	        android:layout_above="@id/unlockField"/>
+	</RelativeLayout>
+
+
+</RelativeLayout>

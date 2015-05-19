@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboardScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:fitsSystemWindows="true"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    style="@style/loginScreen">
+    
+    <LinearLayout 
+        android:id="@+id/dashboardBubbleBox"
+        style="@style/bubbleBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/dashboardList" 
+        android:layout_below="@id/dashboardBubbleBox"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/dashboardLogoutButton"
+        style="@style/buttonFull"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/dashboardLogoutButtonText" />
+
+    <Button
+        android:id="@+id/dashboardHideButton"
+        style="@style/buttonFull"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/dashboardHideButtonText" />
+
+</RelativeLayout>

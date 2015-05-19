@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:fitsSystemWindows="true"
+    android:paddingTop="54dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    style="@style/loginScreen">
+    
+    <ImageView 
+        android:layout_alignParentTop="true"
+        android:id="@+id/loginLogo"
+        android:src="@drawable/login_logo"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="15dp" />
+    
+    <ImageView 
+        android:id="@+id/dotSeparator"
+        android:layout_below="@id/loginLogo" 
+        android:src="@drawable/dotline"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="15dp" />
+
+	<EditText android:id="@+id/loginEmail"
+	    android:layout_below="@id/dotSeparator" 
+	    android:hint="@string/loginEmailHint"
+		style="@style/inputText"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:inputType="textEmailAddress"
+		android:layout_marginTop="15dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginLeft="24dp" />
+	
+	<EditText android:id="@+id/loginPassword" 
+	    android:layout_below="@id/loginEmail" 
+	    android:hint="@string/loginPasswordHint"
+		style="@style/inputText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:inputType="textPassword"
+		android:layout_marginTop="0dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginLeft="24dp"  />
+	
+	<Button android:id="@+id/buttonLogin" 
+	    android:layout_below="@id/loginPassword"
+	    android:layout_alignParentLeft="true" 
+	    android:text="@string/buttonLoginText" 
+	    style="@style/buttonHalf" 
+	    android:layout_width="125dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="0dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginLeft="24dp" />
+
+	<Button android:id="@+id/buttonRegister" 
+	    android:layout_below="@id/loginPassword"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignRight="@id/buttonLogin" 
+	    android:text="@string/buttonRegisterText"
+		style="@style/buttonHalf" 
+		android:layout_width="125dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="0dp"
+		android:layout_marginRight="24dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginLeft="24dp" />
+
+</RelativeLayout>

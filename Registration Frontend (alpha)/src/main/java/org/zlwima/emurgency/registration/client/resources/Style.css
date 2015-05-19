@@ -1,0 +1,132 @@
+/** 
+docu CSS rules
+*/
+
+.textarea {
+    resize: none;
+}
+
+.inputwarning {
+    color: red;
+}
+
+.confirmed {
+    background: lightgreen;
+}
+
+.unconfirmed {
+    background: lightpink;
+}
+
+.bold { 
+    font-weight: bold; 
+}
+
+.abcde {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.centered { 
+    text-align: center; 
+}
+
+.imageButton {
+    border: 1px dotted #FFF;    
+    margin: 2px 2px 2px 2px;
+    cursor: pointer;
+}
+.imageButton:hover {
+    border: 1px dotted #68A;
+}
+
+.removePrescriptionRowCell {
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+    vertical-align: middle;
+    color: orange;
+    background: pink;
+}
+
+.gwt-SuggestBox {
+    padding: 5px 4px;
+    border: 1px solid #ccc;
+    border-top: 1px solid #999;
+    font-size: 100%;
+    font-family: Arial Unicode MS, Arial, sans-serif;
+}
+.gwt-SuggestBoxPopup {
+    background: white;
+}
+.gwt-SuggestBoxPopup .item {
+    padding: 2px 6px;
+    color: #000;
+    cursor: default;
+    font-size: 110%;
+}
+.gwt-SuggestBoxPopup .item-selected {
+    background: #D5E2FF;
+}
+.gwt-SuggestBoxPopup .suggestPopupContent {
+    background: white;
+    border: 2px solid #acf;
+}
+.gwt-SuggestBoxPopup .suggestPopupTopCenterInner,
+.gwt-SuggestBoxPopup .suggestPopupBottomCenterInner,
+.gwt-SuggestBoxPopup .suggestPopupMiddleLeftInner,
+.gwt-SuggestBoxPopup .suggestPopupMiddleRightInner {
+    width: 1px;
+    line-height: 1px;
+}
+.gwt-SuggestBoxPopup .suggestPopupTopLeftInner,
+.gwt-SuggestBoxPopup .suggestPopupTopRightInner,
+.gwt-SuggestBoxPopup .suggestPopupBottomLeftInner,
+.gwt-SuggestBoxPopup .suggestPopupBottomRightInner {
+    width: 0px;
+    height: 0px;
+    zoom: 1;
+}
+html>body .gwt-SuggestBoxPopup {}
+* html .gwt-SuggestBoxPopup .suggestPopupTopLeftInner,
+* html .gwt-SuggestBoxPopup .suggestPopupTopRightInner,
+* html .gwt-SuggestBoxPopup .suggestPopupBottomLeftInner,
+* html .gwt-SuggestBoxPopup .suggestPopupBottomRightInner {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.gwt-PushButton-up,
+.gwt-PushButton-up-hovering,
+.gwt-PushButton-up-disabled,
+.gwt-PushButton-down,
+.gwt-PushButton-down-hovering,
+.gwt-PushButton-down-disabled {
+    border-radius: 2px;
+}
+.gwt-PushButton-up {
+    border: 1px solid;
+    border-color: #939393;
+    cursor: pointer;
+}
+.gwt-PushButton-up-hovering {
+    background: #D5E2FF;    
+}
+.gwt-PushButton-down,
+.gwt-PushButton-down-hovering {
+    padding: 4px 4px 2px 6px;
+    outline: none;
+    border: 1px inset #666;    
+    border-top: 1px solid #333333;
+    cursor: pointer;
+}
+
+.gwt-DialogBox .Caption {
+    font-weight: bold;
+}
+.gwt-DialogBox .dialogContent {
+    font-weight: bold;    
+}
+.gwt-DialogBox .dialogMiddleCenter {
+
+}
